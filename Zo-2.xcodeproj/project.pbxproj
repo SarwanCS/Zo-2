@@ -11,7 +11,81 @@
 		00D05C5D27D26B0C00953FF3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00D05C5C27D26B0C00953FF3 /* ContentView.swift */; };
 		00D05C5F27D26B0D00953FF3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00D05C5E27D26B0D00953FF3 /* Assets.xcassets */; };
 		00D05C6227D26B0D00953FF3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00D05C6127D26B0D00953FF3 /* Preview Assets.xcassets */; };
+		00D05C6A27D26BC500953FF3 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00D05C6927D26BC500953FF3 /* CloudKit.framework */; };
+		00D05C7527D27F9000953FF3 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00D05C7427D27F9000953FF3 /* SettingsView.swift */; };
+		00D05C7727D2849D00953FF3 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00D05C7627D2849D00953FF3 /* HomeView.swift */; };
+		00D05C7927D284E800953FF3 /* WalkthroughOne.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00D05C7827D284E800953FF3 /* WalkthroughOne.swift */; };
+		00D05C7B27D284F200953FF3 /* WalkthroughTwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00D05C7A27D284F200953FF3 /* WalkthroughTwo.swift */; };
+		00D05C7D27D2850300953FF3 /* WalkthroughThree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00D05C7C27D2850300953FF3 /* WalkthroughThree.swift */; };
+		00D05C7F27D2851200953FF3 /* WalkthroughDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00D05C7E27D2851200953FF3 /* WalkthroughDelegate.swift */; };
+		00D05C8127D2856900953FF3 /* LogInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00D05C8027D2856900953FF3 /* LogInView.swift */; };
+		00D05C8327D2857300953FF3 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00D05C8227D2857300953FF3 /* SignUpView.swift */; };
+		00D05C8627D2864900953FF3 /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00D05C8527D2864900953FF3 /* Global.swift */; };
+		00D05C8827D2865700953FF3 /* Logo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00D05C8727D2865700953FF3 /* Logo.swift */; };
+		00D05C8A27D2866500953FF3 /* ChangeThemeHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00D05C8927D2866500953FF3 /* ChangeThemeHandler.swift */; };
+		00D05C8C27D2867200953FF3 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00D05C8B27D2867200953FF3 /* ImagePicker.swift */; };
+		00D05C8E27D2868000953FF3 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00D05C8D27D2868000953FF3 /* Extensions.swift */; };
+		00D05C9027D2868D00953FF3 /* FileImporter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00D05C8F27D2868D00953FF3 /* FileImporter.swift */; };
+		00D05C9227D2879100953FF3 /* PracticeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00D05C9127D2879100953FF3 /* PracticeView.swift */; };
+		00D05C9427D2888700953FF3 /* Sniptest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00D05C9327D2888700953FF3 /* Sniptest.swift */; };
+		00D05C9727D288F800953FF3 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00D05C9627D288F800953FF3 /* DataController.swift */; };
+		00D05C9927D2891300953FF3 /* BottomNavigationBarViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00D05C9827D2891300953FF3 /* BottomNavigationBarViewModel.swift */; };
+		00D05C9B27D28BAF00953FF3 /* CreateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00D05C9A27D28BAF00953FF3 /* CreateView.swift */; };
+		00D05C9D27D28BBB00953FF3 /* CreateDocumentSnip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00D05C9C27D28BBB00953FF3 /* CreateDocumentSnip.swift */; };
+		00D05C9F27D28BC800953FF3 /* CreateTextSnip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00D05C9E27D28BC800953FF3 /* CreateTextSnip.swift */; };
+		00D05CA127D28BE100953FF3 /* CreatePhotoSnip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00D05CA027D28BE100953FF3 /* CreatePhotoSnip.swift */; };
+		00D05CA327D28BF000953FF3 /* CreateURLSnip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00D05CA227D28BF000953FF3 /* CreateURLSnip.swift */; };
+		00D05CA627D28C6B00953FF3 /* DataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 00D05CA427D28C6B00953FF3 /* DataModel.xcdatamodeld */; };
+		00D05CAE27D28D4300953FF3 /* KeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00D05CAD27D28D4300953FF3 /* KeyboardViewController.swift */; };
+		00D05CB327D28D4300953FF3 /* Zo-Keyboard.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 00D05CAB27D28D4300953FF3 /* Zo-Keyboard.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		00D05CB827D28DB900953FF3 /* Sniptest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00D05C9327D2888700953FF3 /* Sniptest.swift */; };
+		00D05CB927D28DD400953FF3 /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00D05C8527D2864900953FF3 /* Global.swift */; };
+		00D05CBA27D28DD900953FF3 /* Logo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00D05C8727D2865700953FF3 /* Logo.swift */; };
+		00D05CBB27D28DDC00953FF3 /* ChangeThemeHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00D05C8927D2866500953FF3 /* ChangeThemeHandler.swift */; };
+		00D05CBC27D28DE900953FF3 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00D05C8B27D2867200953FF3 /* ImagePicker.swift */; };
+		00D05CBD27D28DEB00953FF3 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00D05C8D27D2868000953FF3 /* Extensions.swift */; };
+		00D05CBE27D28DEE00953FF3 /* FileImporter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00D05C8F27D2868D00953FF3 /* FileImporter.swift */; };
+		00D05CBF27D28E1900953FF3 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00D05C7627D2849D00953FF3 /* HomeView.swift */; };
+		00D05CC027D28F0D00953FF3 /* CreateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00D05C9A27D28BAF00953FF3 /* CreateView.swift */; };
+		00D05CC127D28F1A00953FF3 /* CreateDocumentSnip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00D05C9C27D28BBB00953FF3 /* CreateDocumentSnip.swift */; };
+		00D05CC227D28F3500953FF3 /* CreateTextSnip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00D05C9E27D28BC800953FF3 /* CreateTextSnip.swift */; };
+		00D05CC327D28F6100953FF3 /* CreatePhotoSnip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00D05CA027D28BE100953FF3 /* CreatePhotoSnip.swift */; };
+		00D05CC427D28F6D00953FF3 /* CreateURLSnip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00D05CA227D28BF000953FF3 /* CreateURLSnip.swift */; };
+		00D05CC527D28FBD00953FF3 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00D05C8227D2857300953FF3 /* SignUpView.swift */; };
+		00D05CC627D28FCF00953FF3 /* LogInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00D05C8027D2856900953FF3 /* LogInView.swift */; };
+		00D05CC727D2900200953FF3 /* WalkthroughOne.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00D05C7827D284E800953FF3 /* WalkthroughOne.swift */; };
+		00D05CC827D2900400953FF3 /* WalkthroughTwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00D05C7A27D284F200953FF3 /* WalkthroughTwo.swift */; };
+		00D05CC927D2900700953FF3 /* WalkthroughThree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00D05C7C27D2850300953FF3 /* WalkthroughThree.swift */; };
+		00D05CCA27D2905800953FF3 /* PracticeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00D05C9127D2879100953FF3 /* PracticeView.swift */; };
+		00D05CCD27D2986400953FF3 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00D05C9627D288F800953FF3 /* DataController.swift */; };
+		00D05CCE27D2986600953FF3 /* BottomNavigationBarViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00D05C9827D2891300953FF3 /* BottomNavigationBarViewModel.swift */; };
+		00D05CCF27D2989600953FF3 /* DataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 00D05CA427D28C6B00953FF3 /* DataModel.xcdatamodeld */; };
+		00D05CD127D2995C00953FF3 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00D05CD027D2995C00953FF3 /* Launch Screen.storyboard */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		00D05CB027D28D4300953FF3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 00D05C4F27D26B0C00953FF3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 00D05CAA27D28D4300953FF3;
+			remoteInfo = "Zo-Keyboard";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		00D05CB227D28D4300953FF3 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				00D05CB327D28D4300953FF3 /* Zo-Keyboard.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		00D05C5727D26B0C00953FF3 /* Zo-2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Zo-2.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -19,10 +93,50 @@
 		00D05C5C27D26B0C00953FF3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		00D05C5E27D26B0D00953FF3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		00D05C6127D26B0D00953FF3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		00D05C6927D26BC500953FF3 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
+		00D05C6B27D26C1600953FF3 /* Zo-2.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Zo-2.entitlements"; sourceTree = "<group>"; };
+		00D05C6C27D26C2D00953FF3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		00D05C7427D27F9000953FF3 /* SettingsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		00D05C7627D2849D00953FF3 /* HomeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		00D05C7827D284E800953FF3 /* WalkthroughOne.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WalkthroughOne.swift; sourceTree = "<group>"; };
+		00D05C7A27D284F200953FF3 /* WalkthroughTwo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WalkthroughTwo.swift; sourceTree = "<group>"; };
+		00D05C7C27D2850300953FF3 /* WalkthroughThree.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WalkthroughThree.swift; sourceTree = "<group>"; };
+		00D05C7E27D2851200953FF3 /* WalkthroughDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WalkthroughDelegate.swift; sourceTree = "<group>"; };
+		00D05C8027D2856900953FF3 /* LogInView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogInView.swift; sourceTree = "<group>"; };
+		00D05C8227D2857300953FF3 /* SignUpView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
+		00D05C8527D2864900953FF3 /* Global.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Global.swift; sourceTree = "<group>"; };
+		00D05C8727D2865700953FF3 /* Logo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Logo.swift; sourceTree = "<group>"; };
+		00D05C8927D2866500953FF3 /* ChangeThemeHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChangeThemeHandler.swift; sourceTree = "<group>"; };
+		00D05C8B27D2867200953FF3 /* ImagePicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		00D05C8D27D2868000953FF3 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		00D05C8F27D2868D00953FF3 /* FileImporter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileImporter.swift; sourceTree = "<group>"; };
+		00D05C9127D2879100953FF3 /* PracticeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PracticeView.swift; sourceTree = "<group>"; };
+		00D05C9327D2888700953FF3 /* Sniptest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sniptest.swift; sourceTree = "<group>"; };
+		00D05C9627D288F800953FF3 /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
+		00D05C9827D2891300953FF3 /* BottomNavigationBarViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomNavigationBarViewModel.swift; sourceTree = "<group>"; };
+		00D05C9A27D28BAF00953FF3 /* CreateView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateView.swift; sourceTree = "<group>"; };
+		00D05C9C27D28BBB00953FF3 /* CreateDocumentSnip.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateDocumentSnip.swift; sourceTree = "<group>"; };
+		00D05C9E27D28BC800953FF3 /* CreateTextSnip.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateTextSnip.swift; sourceTree = "<group>"; };
+		00D05CA027D28BE100953FF3 /* CreatePhotoSnip.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreatePhotoSnip.swift; sourceTree = "<group>"; };
+		00D05CA227D28BF000953FF3 /* CreateURLSnip.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateURLSnip.swift; sourceTree = "<group>"; };
+		00D05CA527D28C6B00953FF3 /* DataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DataModel.xcdatamodel; sourceTree = "<group>"; };
+		00D05CAB27D28D4300953FF3 /* Zo-Keyboard.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Zo-Keyboard.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		00D05CAD27D28D4300953FF3 /* KeyboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardViewController.swift; sourceTree = "<group>"; };
+		00D05CAF27D28D4300953FF3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		00D05CB727D28D6500953FF3 /* Zo-Keyboard.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Zo-Keyboard.entitlements"; sourceTree = "<group>"; };
+		00D05CD027D2995C00953FF3 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		00D05C5427D26B0C00953FF3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00D05C6A27D26BC500953FF3 /* CloudKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		00D05CA827D28D4300953FF3 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -35,8 +149,11 @@
 		00D05C4E27D26B0C00953FF3 = {
 			isa = PBXGroup;
 			children = (
+				00D05CD027D2995C00953FF3 /* Launch Screen.storyboard */,
 				00D05C5927D26B0C00953FF3 /* Zo-2 */,
+				00D05CAC27D28D4300953FF3 /* Zo-Keyboard */,
 				00D05C5827D26B0C00953FF3 /* Products */,
+				00D05C6827D26BC500953FF3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -44,6 +161,7 @@
 			isa = PBXGroup;
 			children = (
 				00D05C5727D26B0C00953FF3 /* Zo-2.app */,
+				00D05CAB27D28D4300953FF3 /* Zo-Keyboard.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -51,9 +169,16 @@
 		00D05C5927D26B0C00953FF3 /* Zo-2 */ = {
 			isa = PBXGroup;
 			children = (
+				00D05C6B27D26C1600953FF3 /* Zo-2.entitlements */,
+				00D05C6C27D26C2D00953FF3 /* Info.plist */,
+				00D05C8427D2863400953FF3 /* Utils */,
+				00D05C6E27D27F0A00953FF3 /* View */,
+				00D05C6D27D26DDD00953FF3 /* Model */,
 				00D05C5A27D26B0C00953FF3 /* Zo_2App.swift */,
 				00D05C5C27D26B0C00953FF3 /* ContentView.swift */,
+				00D05C9527D288CF00953FF3 /* ViewModel */,
 				00D05C5E27D26B0D00953FF3 /* Assets.xcassets */,
+				00D05CA427D28C6B00953FF3 /* DataModel.xcdatamodeld */,
 				00D05C6027D26B0D00953FF3 /* Preview Content */,
 			);
 			path = "Zo-2";
@@ -67,6 +192,115 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		00D05C6827D26BC500953FF3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				00D05C6927D26BC500953FF3 /* CloudKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		00D05C6D27D26DDD00953FF3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				00D05C9327D2888700953FF3 /* Sniptest.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		00D05C6E27D27F0A00953FF3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				00D05C6F27D27F4200953FF3 /* Settings */,
+				00D05C7027D27F4A00953FF3 /* Home */,
+				00D05C7327D27F6E00953FF3 /* Create */,
+				00D05C7227D27F6500953FF3 /* Authentication */,
+				00D05C9127D2879100953FF3 /* PracticeView.swift */,
+				00D05C7127D27F5300953FF3 /* Walkthrough */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		00D05C6F27D27F4200953FF3 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				00D05C7427D27F9000953FF3 /* SettingsView.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		00D05C7027D27F4A00953FF3 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				00D05C7627D2849D00953FF3 /* HomeView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		00D05C7127D27F5300953FF3 /* Walkthrough */ = {
+			isa = PBXGroup;
+			children = (
+				00D05C7827D284E800953FF3 /* WalkthroughOne.swift */,
+				00D05C7E27D2851200953FF3 /* WalkthroughDelegate.swift */,
+				00D05C7A27D284F200953FF3 /* WalkthroughTwo.swift */,
+				00D05C7C27D2850300953FF3 /* WalkthroughThree.swift */,
+			);
+			path = Walkthrough;
+			sourceTree = "<group>";
+		};
+		00D05C7227D27F6500953FF3 /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				00D05C8027D2856900953FF3 /* LogInView.swift */,
+				00D05C8227D2857300953FF3 /* SignUpView.swift */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+		00D05C7327D27F6E00953FF3 /* Create */ = {
+			isa = PBXGroup;
+			children = (
+				00D05C9A27D28BAF00953FF3 /* CreateView.swift */,
+				00D05C9C27D28BBB00953FF3 /* CreateDocumentSnip.swift */,
+				00D05C9E27D28BC800953FF3 /* CreateTextSnip.swift */,
+				00D05CA027D28BE100953FF3 /* CreatePhotoSnip.swift */,
+				00D05CA227D28BF000953FF3 /* CreateURLSnip.swift */,
+			);
+			path = Create;
+			sourceTree = "<group>";
+		};
+		00D05C8427D2863400953FF3 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				00D05C8527D2864900953FF3 /* Global.swift */,
+				00D05C8727D2865700953FF3 /* Logo.swift */,
+				00D05C8927D2866500953FF3 /* ChangeThemeHandler.swift */,
+				00D05C8B27D2867200953FF3 /* ImagePicker.swift */,
+				00D05C8D27D2868000953FF3 /* Extensions.swift */,
+				00D05C8F27D2868D00953FF3 /* FileImporter.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		00D05C9527D288CF00953FF3 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				00D05C9627D288F800953FF3 /* DataController.swift */,
+				00D05C9827D2891300953FF3 /* BottomNavigationBarViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		00D05CAC27D28D4300953FF3 /* Zo-Keyboard */ = {
+			isa = PBXGroup;
+			children = (
+				00D05CB727D28D6500953FF3 /* Zo-Keyboard.entitlements */,
+				00D05CAD27D28D4300953FF3 /* KeyboardViewController.swift */,
+				00D05CAF27D28D4300953FF3 /* Info.plist */,
+			);
+			path = "Zo-Keyboard";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -77,15 +311,34 @@
 				00D05C5327D26B0C00953FF3 /* Sources */,
 				00D05C5427D26B0C00953FF3 /* Frameworks */,
 				00D05C5527D26B0C00953FF3 /* Resources */,
+				00D05CB227D28D4300953FF3 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				00D05CB127D28D4300953FF3 /* PBXTargetDependency */,
 			);
 			name = "Zo-2";
 			productName = "Zo-2";
 			productReference = 00D05C5727D26B0C00953FF3 /* Zo-2.app */;
 			productType = "com.apple.product-type.application";
+		};
+		00D05CAA27D28D4300953FF3 /* Zo-Keyboard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 00D05CB427D28D4300953FF3 /* Build configuration list for PBXNativeTarget "Zo-Keyboard" */;
+			buildPhases = (
+				00D05CA727D28D4300953FF3 /* Sources */,
+				00D05CA827D28D4300953FF3 /* Frameworks */,
+				00D05CA927D28D4300953FF3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Zo-Keyboard";
+			productName = "Zo-Keyboard";
+			productReference = 00D05CAB27D28D4300953FF3 /* Zo-Keyboard.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -98,6 +351,9 @@
 				LastUpgradeCheck = 1320;
 				TargetAttributes = {
 					00D05C5627D26B0C00953FF3 = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+					00D05CAA27D28D4300953FF3 = {
 						CreatedOnToolsVersion = 13.2.1;
 					};
 				};
@@ -116,6 +372,7 @@
 			projectRoot = "";
 			targets = (
 				00D05C5627D26B0C00953FF3 /* Zo-2 */,
+				00D05CAA27D28D4300953FF3 /* Zo-Keyboard */,
 			);
 		};
 /* End PBXProject section */
@@ -125,8 +382,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				00D05CD127D2995C00953FF3 /* Launch Screen.storyboard in Resources */,
 				00D05C6227D26B0D00953FF3 /* Preview Assets.xcassets in Resources */,
 				00D05C5F27D26B0D00953FF3 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		00D05CA927D28D4300953FF3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,12 +402,74 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				00D05CA127D28BE100953FF3 /* CreatePhotoSnip.swift in Sources */,
+				00D05C7D27D2850300953FF3 /* WalkthroughThree.swift in Sources */,
+				00D05C9427D2888700953FF3 /* Sniptest.swift in Sources */,
+				00D05C7527D27F9000953FF3 /* SettingsView.swift in Sources */,
+				00D05C9927D2891300953FF3 /* BottomNavigationBarViewModel.swift in Sources */,
+				00D05C9D27D28BBB00953FF3 /* CreateDocumentSnip.swift in Sources */,
+				00D05C9B27D28BAF00953FF3 /* CreateView.swift in Sources */,
+				00D05C7927D284E800953FF3 /* WalkthroughOne.swift in Sources */,
+				00D05C9227D2879100953FF3 /* PracticeView.swift in Sources */,
+				00D05C8C27D2867200953FF3 /* ImagePicker.swift in Sources */,
+				00D05C8A27D2866500953FF3 /* ChangeThemeHandler.swift in Sources */,
+				00D05C7727D2849D00953FF3 /* HomeView.swift in Sources */,
+				00D05C7B27D284F200953FF3 /* WalkthroughTwo.swift in Sources */,
 				00D05C5D27D26B0C00953FF3 /* ContentView.swift in Sources */,
+				00D05C9727D288F800953FF3 /* DataController.swift in Sources */,
+				00D05C8627D2864900953FF3 /* Global.swift in Sources */,
+				00D05C8327D2857300953FF3 /* SignUpView.swift in Sources */,
+				00D05C8E27D2868000953FF3 /* Extensions.swift in Sources */,
+				00D05C8127D2856900953FF3 /* LogInView.swift in Sources */,
 				00D05C5B27D26B0C00953FF3 /* Zo_2App.swift in Sources */,
+				00D05CA327D28BF000953FF3 /* CreateURLSnip.swift in Sources */,
+				00D05C8827D2865700953FF3 /* Logo.swift in Sources */,
+				00D05C7F27D2851200953FF3 /* WalkthroughDelegate.swift in Sources */,
+				00D05CA627D28C6B00953FF3 /* DataModel.xcdatamodeld in Sources */,
+				00D05C9027D2868D00953FF3 /* FileImporter.swift in Sources */,
+				00D05C9F27D28BC800953FF3 /* CreateTextSnip.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		00D05CA727D28D4300953FF3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00D05CBF27D28E1900953FF3 /* HomeView.swift in Sources */,
+				00D05CC527D28FBD00953FF3 /* SignUpView.swift in Sources */,
+				00D05CAE27D28D4300953FF3 /* KeyboardViewController.swift in Sources */,
+				00D05CCE27D2986600953FF3 /* BottomNavigationBarViewModel.swift in Sources */,
+				00D05CB827D28DB900953FF3 /* Sniptest.swift in Sources */,
+				00D05CBA27D28DD900953FF3 /* Logo.swift in Sources */,
+				00D05CC127D28F1A00953FF3 /* CreateDocumentSnip.swift in Sources */,
+				00D05CC027D28F0D00953FF3 /* CreateView.swift in Sources */,
+				00D05CCD27D2986400953FF3 /* DataController.swift in Sources */,
+				00D05CCF27D2989600953FF3 /* DataModel.xcdatamodeld in Sources */,
+				00D05CC227D28F3500953FF3 /* CreateTextSnip.swift in Sources */,
+				00D05CC427D28F6D00953FF3 /* CreateURLSnip.swift in Sources */,
+				00D05CC827D2900400953FF3 /* WalkthroughTwo.swift in Sources */,
+				00D05CBC27D28DE900953FF3 /* ImagePicker.swift in Sources */,
+				00D05CCA27D2905800953FF3 /* PracticeView.swift in Sources */,
+				00D05CC727D2900200953FF3 /* WalkthroughOne.swift in Sources */,
+				00D05CBB27D28DDC00953FF3 /* ChangeThemeHandler.swift in Sources */,
+				00D05CB927D28DD400953FF3 /* Global.swift in Sources */,
+				00D05CBD27D28DEB00953FF3 /* Extensions.swift in Sources */,
+				00D05CC927D2900700953FF3 /* WalkthroughThree.swift in Sources */,
+				00D05CC327D28F6100953FF3 /* CreatePhotoSnip.swift in Sources */,
+				00D05CC627D28FCF00953FF3 /* LogInView.swift in Sources */,
+				00D05CBE27D28DEE00953FF3 /* FileImporter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		00D05CB127D28D4300953FF3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 00D05CAA27D28D4300953FF3 /* Zo-Keyboard */;
+			targetProxy = 00D05CB027D28D4300953FF3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		00D05C6327D26B0D00953FF3 /* Debug */ = {
@@ -264,16 +591,21 @@
 		00D05C6627D26B0D00953FF3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Zo-2/Zo-2.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Zo-2/Preview Content\"";
+				DEVELOPMENT_TEAM = DVZ97926YJ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Zo-2/Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -292,16 +624,21 @@
 		00D05C6727D26B0D00953FF3 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Zo-2/Zo-2.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Zo-2/Preview Content\"";
+				DEVELOPMENT_TEAM = DVZ97926YJ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Zo-2/Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -311,6 +648,58 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "BrianHeralall.Zo-2";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		00D05CB527D28D4300953FF3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "Zo-Keyboard/Zo-Keyboard.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = DVZ97926YJ;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Zo-Keyboard/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Zo-Keyboard";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "BrianHeralall.Zo-2.Zo-Keyboard";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		00D05CB627D28D4300953FF3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "Zo-Keyboard/Zo-Keyboard.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = DVZ97926YJ;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Zo-Keyboard/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Zo-Keyboard";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "BrianHeralall.Zo-2.Zo-Keyboard";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -338,7 +727,29 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		00D05CB427D28D4300953FF3 /* Build configuration list for PBXNativeTarget "Zo-Keyboard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				00D05CB527D28D4300953FF3 /* Debug */,
+				00D05CB627D28D4300953FF3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		00D05CA427D28C6B00953FF3 /* DataModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				00D05CA527D28C6B00953FF3 /* DataModel.xcdatamodel */,
+			);
+			currentVersion = 00D05CA527D28C6B00953FF3 /* DataModel.xcdatamodel */;
+			path = DataModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 00D05C4F27D26B0C00953FF3 /* Project object */;
 }
