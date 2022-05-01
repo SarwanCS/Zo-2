@@ -10,6 +10,10 @@ import SwiftUI
 struct CreateView: View {
     @State var show = false
     @ObservedObject var bottomNavigationBarViewModel: BottomNavigationBarViewModel
+    @State var showTextSnip = false
+    @State var showURLSnip = false
+    @State var showDocumentSnip = false
+    @State var showPhotoSnip = false
     var body: some View {
         NavigationView{
             ZStack{
@@ -22,39 +26,41 @@ struct CreateView: View {
                 }
                 VStack{
                     HStack{
-                        NavigationLink {
-                            CreateTextSnip(bottomNavigationBarViewModel: bottomNavigationBarViewModel)
+                        Button {
+                           showTextSnip = true
                         } label: {
                             CreateViewCell(image: "doc.text.image", color: "TextSnipColor", name: "Text Shortcut")
                         }
-
-                        NavigationLink {
-                            CreateURLSnip()
+                        Button {
+                           showURLSnip = true
                         } label: {
                             CreateViewCell(image: "paperclip", color: "URLSnipColor", name: "URL Shortcut")
                         }
                     }
                     HStack{
-                        NavigationLink {
-                            CreatePhotoSnip()
+                        Button {
+                           showPhotoSnip = true
                         } label: {
                             CreateViewCell(image: "photo", color: "ImageSnipColor", name: "Photo Shortcut")
                         }
-                        NavigationLink {
-                            CreateDocumentSnip()
+                        Button {
+                           showDocumentSnip = true
                         } label: {
                             CreateViewCell(image: "doc.fill", color: "DocumentSnipColor", name: "Document Shortcut")
                         }
 
                     }
-                    Text("Choose the type of Snip you want to create. You can will be able to access your Snips right from Snip Keyboard")
+                    Text("Choose the type of Shortcut you want to create. You can access your Shortcuts at anytime by activating the Zo Keyboard in your settings")
                         .multilineTextAlignment(.center)
                         .padding()
                         .padding(.horizontal, 35)
-                }.padding(.bottom, 50)
-            }.navigationTitle("Create Snip")
+                }.padding(.top, 80)
+            }.navigationTitle("Create")
             .ignoresSafeArea()
-            
+            .fullScreenCover(isPresented: $showTextSnip, content: {CreateTextSnip(bottomNavigationBarViewModel: bottomNavigationBarViewModel)})
+            .fullScreenCover(isPresented: $showURLSnip, content: {CreateURLSnip()})
+            .fullScreenCover(isPresented: $showPhotoSnip, content: {CreatePhotoSnip()})
+            .fullScreenCover(isPresented: $showDocumentSnip, content: {CreateDocumentSnip()})
         }
     }
 }

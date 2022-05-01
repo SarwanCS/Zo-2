@@ -29,11 +29,23 @@ struct WalkthroughOne: View {
                 VStack{
                     HStack{
                         Image("Snip-4")
+                            .resizable()
+                            .aspectRatio(contentMode: .fit)
+                            .frame(width: 170)
                         Image("Snip-1")
+                            .resizable()
+                            .aspectRatio(contentMode: .fit)
+                            .frame(width: 170)
                     }
                     HStack{
                         Image("Snip-2")
+                            .resizable()
+                            .aspectRatio(contentMode: .fit)
+                            .frame(width: 170)
                         Image("Snip-3")
+                            .resizable()
+                            .aspectRatio(contentMode: .fit)
+                            .frame(width: 170)
                     }
 
                     Text("Create Shortcuts.")
@@ -43,7 +55,7 @@ struct WalkthroughOne: View {
                     Text("Constantly sharing the same pictures, text, phrases, files or links? Create a Snip")
                         .multilineTextAlignment(.center)
                         .padding(.horizontal, 30)
-                }
+                }.padding(.top, 90)
                 Spacer()
                 VStack{
                     Button {
@@ -52,7 +64,11 @@ struct WalkthroughOne: View {
                             firstTime = false
                         }
                     } label: {
-                        Image("SkipBtn")
+                        Image("skipButton")
+                            .resizable()
+                            //.scaledToFit()
+                            .aspectRatio(contentMode: .fit)
+                            .frame(width: 130)
                     }
 
                     HStack(spacing: 10){
@@ -74,8 +90,8 @@ struct WalkthroughOne: View {
     }
 }
 
-//struct WalkthroughOne_Previews: PreviewProvider {
-//    static var previews: some View {
-//        WalkthroughOne()
-//    }
-//}
+struct WalkthroughOne_Previews: PreviewProvider {
+    static var previews: some View {
+        WalkthroughOne(isSkipped: .constant(false))
+    }
+}

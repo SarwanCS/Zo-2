@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		00A3BA202809F2A500AFB3FB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00D05C5E27D26B0D00953FF3 /* Assets.xcassets */; };
 		00D05C5B27D26B0C00953FF3 /* Zo_2App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00D05C5A27D26B0C00953FF3 /* Zo_2App.swift */; };
 		00D05C5D27D26B0C00953FF3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00D05C5C27D26B0C00953FF3 /* ContentView.swift */; };
 		00D05C5F27D26B0D00953FF3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00D05C5E27D26B0D00953FF3 /* Assets.xcassets */; };
@@ -170,14 +171,14 @@
 			isa = PBXGroup;
 			children = (
 				00D05C6B27D26C1600953FF3 /* Zo-2.entitlements */,
+				00D05C5E27D26B0D00953FF3 /* Assets.xcassets */,
 				00D05C6C27D26C2D00953FF3 /* Info.plist */,
+				00D05C6D27D26DDD00953FF3 /* Model */,
 				00D05C8427D2863400953FF3 /* Utils */,
 				00D05C6E27D27F0A00953FF3 /* View */,
-				00D05C6D27D26DDD00953FF3 /* Model */,
-				00D05C5A27D26B0C00953FF3 /* Zo_2App.swift */,
-				00D05C5C27D26B0C00953FF3 /* ContentView.swift */,
 				00D05C9527D288CF00953FF3 /* ViewModel */,
-				00D05C5E27D26B0D00953FF3 /* Assets.xcassets */,
+				00D05C5C27D26B0C00953FF3 /* ContentView.swift */,
+				00D05C5A27D26B0C00953FF3 /* Zo_2App.swift */,
 				00D05CA427D28C6B00953FF3 /* DataModel.xcdatamodeld */,
 				00D05C6027D26B0D00953FF3 /* Preview Content */,
 			);
@@ -392,6 +393,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				00A3BA202809F2A500AFB3FB /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

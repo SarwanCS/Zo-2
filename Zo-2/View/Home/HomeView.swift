@@ -38,7 +38,7 @@ struct HomeView: View {
                 
                 if snips.isEmpty {
                     HStack{
-                        Image("homeEmpty")
+                        Image("homeEmpty").resizable().scaledToFit().frame(width: screenW - 100)
                             .onAppear {
                                 longPressed = false
                                 startAnimation = false
@@ -49,7 +49,7 @@ struct HomeView: View {
                     
                     ScrollView{
                         VStack{
-                            LazyVGrid(columns: columns){
+                            LazyVGrid(columns: columns, spacing: 12){
                                 ForEach(snips){ snip in
                                     if longPressed {
                                         CustomGridCell(snip: snip, longPressed: $longPressed)
@@ -73,7 +73,7 @@ struct HomeView: View {
                                 
                             }
                         }.padding()
-                            .padding(.horizontal, 25)
+//                            .padding(.horizontal, 25)
                         
                     }
                     
@@ -107,12 +107,12 @@ struct CustomGridCell: View {
     let snip: Snip
     @Binding var longPressed: Bool
     @Environment(\.managedObjectContext) var moc
-
+    let cellSize = screenW/2 - 29
     var body: some View {
         ZStack{
             RoundedRectangle(cornerRadius: 20)
                 .fill(Color(snip.color ?? ""))
-                .frame(width: 160, height: 160)
+                .frame(width:cellSize, height: cellSize)
             VStack{
                 Image(systemName: snip.image ?? "")
                     .font(.system(size: 35, weight: .bold))
@@ -144,5 +144,7 @@ struct CustomGridCell: View {
             , alignment: .topTrailing
             
         )
+        .padding(.horizontal,25)
     }
 }
+

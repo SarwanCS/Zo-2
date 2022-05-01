@@ -31,21 +31,37 @@ struct WalkthroughTwo: View {
                         Image("WalkthroughTwoBackground")
                         ZStack(alignment: .top){
                             Image("WalkthroughTwoKeyboard")
+                                .resizable()
+                                //.scaledToFit()
+                                .aspectRatio(contentMode: .fit)
+                                .frame(width: 350)
                             ZStack{
                                 Image("WalkthroughTwoBackground")
+                                    .resizable()
+                                    //.scaledToFit()
+                                    .aspectRatio(contentMode: .fit)
+                                    .frame(width: 350)
                                 VStack(alignment: .leading){
                                     Image("YourSnips")
+                                        .resizable()
+                                        //.scaledToFit()
+                                        .aspectRatio(contentMode: .fit)
+                                        .frame(width: 70)
                                     Image("WalkthroughTwoContent")
+                                        .resizable()
+                                        //.scaledToFit()
+                                        .aspectRatio(contentMode: .fit)
+                                        .frame(width: 280)
                                 }
                             }
                             
                         }
-                    }.padding(.top, 50)
+                    }.padding(.top, 80)
                     Text("Accessing Shortcuts.")
                         .font(.system(size: 30, weight: .bold))
-                        .padding(.top, 80)
+                        .padding(.top, 150)
                         .padding(.bottom, 2)
-                    Text("Activate Zo's keyboard so you can access the Shortcuts you create inside the app.")
+                    Text("Activate Zo's keyboard so you can access the Shortcuts you created right from your keyboard.")
                         .multilineTextAlignment(.center)
                         .padding(.horizontal, 30)
                 }
@@ -57,7 +73,11 @@ struct WalkthroughTwo: View {
                             firstTime = false
                         }
                     } label: {
-                        Image("SkipBtn")
+                        Image("skipButton")
+                            .resizable()
+                            //.scaledToFit()
+                            .aspectRatio(contentMode: .fit)
+                            .frame(width: 130)
                     }
                     
                     HStack(spacing: 10){

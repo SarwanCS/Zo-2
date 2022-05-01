@@ -39,7 +39,7 @@ struct CreateDocumentSnip: View {
                 Button {
                     isImporting = true
                 } label: {
-                    CustomCreateButton(text: "Upload Document", borderColor: scheme == .dark ? Color("CustomDarkGray") : Color("CustomGray") , contentColor: scheme == .dark ? Color("CustomDarkGray") : Color("CustomGray"))
+                    CustomCreateButton(text: "Upload Document", borderColor: scheme == .dark ? Color("CustomDarkGrey") : Color("CustomGray") , contentColor: scheme == .dark ? Color("CustomDarkGrey") : Color("CustomGray"))
                 }.padding(.bottom, 5)
 
                 CustomTextField(text: $text)
@@ -62,7 +62,7 @@ struct CreateDocumentSnip: View {
                     mode.wrappedValue.dismiss()
                     
                 } label: {
-                    CustomCreateButton(text: "CREATE SNIP", borderColor: scheme == .dark ? Color("CustomDarkGray") : .black , contentColor: scheme == .dark ?  Color("CustomDarkGray") : .white)
+                    CustomCreateButton(text: "CREATE SHORTCUT", borderColor: scheme == .dark ? Color("CustomDarkGrey") : .black , contentColor: scheme == .dark ?  Color("CustomDarkGrey") : .white)
                 }.padding(.bottom, 50)
                     .fileImporter(
                         isPresented: $isImporting,
@@ -89,7 +89,7 @@ struct CreateDocumentSnip: View {
             
         }.overlay(
             HStack{
-                Text("Document Snip")
+                Text("Document Shortcut")
                     .font(.title)
                     .bold()
                     .padding(.leading)
@@ -97,7 +97,7 @@ struct CreateDocumentSnip: View {
                 Button {
                     mode.wrappedValue.dismiss()
                 } label: {
-                    Image("CancelButton")
+                    Image("cancelButton")
                 }.padding(.trailing, 40)
             }
                 .padding(.top, 80)
@@ -132,12 +132,12 @@ struct CustomTextField: View {
     var body: some View {
         ZStack{
             RoundedRectangle(cornerRadius: 15)
-                .fill(scheme == .dark ? Color("CustomDarkGray") : Color.white)
+                .fill(scheme == .dark ? Color("CustomDarkGrey") : Color.white)
             RoundedRectangle(cornerRadius: 15)
                 .stroke(lineWidth: 3)
-                .fill(scheme == .dark ? Color("CustomDarkGray") : Color.black)
+                .fill(scheme == .dark ? Color("CustomDarkGrey") : Color.black)
             HStack{
-                TextField("Snip Name...", text: $text)
+                TextField("Shortcut Name...", text: $text)
                 Spacer()
             }.padding()
             
@@ -151,6 +151,7 @@ struct CustomTextField: View {
 struct CreateDocumentSnip_Previews: PreviewProvider {
     static var previews: some View {
         CreateDocumentSnip()
-            .preferredColorScheme(.dark)
+            .preferredColorScheme(.light)
     }
 }
+
