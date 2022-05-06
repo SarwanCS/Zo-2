@@ -33,7 +33,7 @@ struct WalkthroughDelegate: View {
                         .offset(x: offsetOfThirdOne.width)
                         .onTapGesture {
                             withAnimation {
-                                offsetOfThirdOne.width = 0
+                                offsetOfThirdOne.width = screenW
                                 isFinished = true
                                 firstTime = false
                             }
@@ -47,7 +47,7 @@ struct WalkthroughDelegate: View {
                         .onTapGesture {
                             
                             withAnimation {
-                                offsetOfSecondOne.width = 0
+                                offsetOfSecondOne.width = screenW
                             }
                             
                         }
@@ -62,7 +62,7 @@ struct WalkthroughDelegate: View {
                         .onTapGesture {
                             
                             withAnimation {
-                                offsetOfFirstOne.width = 0
+                                offsetOfFirstOne.width = screenW
                             }
                             
                         }
