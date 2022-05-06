@@ -40,6 +40,8 @@ class KeyboardViewController: UIInputViewController {
         view.addSubview(child.view)
         addChild(child)
         
+        
+        
 
     }
 }
