@@ -61,6 +61,7 @@
 		00D05CCE27D2986600953FF3 /* BottomNavigationBarViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00D05C9827D2891300953FF3 /* BottomNavigationBarViewModel.swift */; };
 		00D05CCF27D2989600953FF3 /* DataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 00D05CA427D28C6B00953FF3 /* DataModel.xcdatamodeld */; };
 		00D05CD127D2995C00953FF3 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00D05CD027D2995C00953FF3 /* Launch Screen.storyboard */; };
+		C30471012824D698004A77A7 /* walktap.swift in Sources */ = {isa = PBXBuildFile; fileRef = C30471002824D698004A77A7 /* walktap.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -125,6 +126,7 @@
 		00D05CAF27D28D4300953FF3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00D05CB727D28D6500953FF3 /* Zo-Keyboard.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Zo-Keyboard.entitlements"; sourceTree = "<group>"; };
 		00D05CD027D2995C00953FF3 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		C30471002824D698004A77A7 /* walktap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = walktap.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -244,6 +246,7 @@
 				00D05C7E27D2851200953FF3 /* WalkthroughDelegate.swift */,
 				00D05C7A27D284F200953FF3 /* WalkthroughTwo.swift */,
 				00D05C7C27D2850300953FF3 /* WalkthroughThree.swift */,
+				C30471002824D698004A77A7 /* walktap.swift */,
 			);
 			path = Walkthrough;
 			sourceTree = "<group>";
@@ -422,6 +425,7 @@
 				00D05C8E27D2868000953FF3 /* Extensions.swift in Sources */,
 				00D05C8127D2856900953FF3 /* LogInView.swift in Sources */,
 				00D05C5B27D26B0C00953FF3 /* Zo_2App.swift in Sources */,
+				C30471012824D698004A77A7 /* walktap.swift in Sources */,
 				00D05CA327D28BF000953FF3 /* CreateURLSnip.swift in Sources */,
 				00D05C8827D2865700953FF3 /* Logo.swift in Sources */,
 				00D05C7F27D2851200953FF3 /* WalkthroughDelegate.swift in Sources */,
