@@ -79,9 +79,9 @@ struct WalkthroughDelegate: View {
     
 }
 
-//struct WalkthroughDelegate_Previews: PreviewProvider {
-//    static var previews: some View {
-//        WalkthroughDelegate()
-//            .preferredColorScheme(.light)
-//    }
-//}
+struct WalkthroughDelegate_Previews: PreviewProvider {
+    static var previews: some View {
+        WalkthroughDelegate(loggedIn: .constant(true))
+            .preferredColorScheme(.light)
+    }
+}

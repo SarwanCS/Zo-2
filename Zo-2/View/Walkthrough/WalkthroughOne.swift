@@ -76,6 +76,6 @@ struct WalkthroughOne: View {
 
 //struct WalkthroughOne_Previews: PreviewProvider {
 //    static var previews: some View {
-//        WalkthroughOne()
+//        WalkthroughOne(isSkipped: .constant(false))
 //    }
 //}
