@@ -90,8 +90,10 @@ struct WalkthroughOne: View {
     }
 }
 
+
 struct WalkthroughOne_Previews: PreviewProvider {
     static var previews: some View {
         WalkthroughOne(isSkipped: .constant(false))
     }
 }
+

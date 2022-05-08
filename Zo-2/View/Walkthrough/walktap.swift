@@ -1,13 +1,15 @@
 //
-//  WalkthroughDelegate.swift
+//  walktap.swift
 //  Zo-2
 //
-//  conversion from drag to tap gesture
-//
+//  Created by administrator on 5/6/22.
+// ignore this file test code
 
+/*
 import SwiftUI
 
-struct WalkthroughDelegate: View {
+struct walktap:View {
+    
     @Environment(\.colorScheme) var scheme
     @State var offsetOfFirstOne = CGSize.zero
     @State var offsetOfSecondOne = CGSize.zero
@@ -33,7 +35,7 @@ struct WalkthroughDelegate: View {
                         .offset(x: offsetOfThirdOne.width)
                         .onTapGesture {
                             withAnimation {
-                                offsetOfThirdOne.width = screenW
+                                offsetOfThirdOne.width = 0
                                 isFinished = true
                                 firstTime = false
                             }
@@ -47,7 +49,7 @@ struct WalkthroughDelegate: View {
                         .onTapGesture {
                             
                             withAnimation {
-                                offsetOfSecondOne.width = screenW
+                                offsetOfSecondOne.width = 0
                             }
                             
                         }
@@ -62,7 +64,7 @@ struct WalkthroughDelegate: View {
                         .onTapGesture {
                             
                             withAnimation {
-                                offsetOfFirstOne.width = screenW
+                                offsetOfFirstOne.width = 0
                             }
                             
                         }
@@ -77,11 +79,6 @@ struct WalkthroughDelegate: View {
         
     }
     
-}
-
-struct WalkthroughDelegate_Previews: PreviewProvider {
-    static var previews: some View {
-        WalkthroughDelegate(loggedIn: .constant(true))
-            .preferredColorScheme(.light)
-    }
-}
+    
+    
+} */
