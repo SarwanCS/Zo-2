@@ -17,7 +17,7 @@ class TestClass: ObservableObject {
     }
 }
 
-struct PractiseView: View {
+struct PracticeView: View {
     @StateObject var testClass = TestClass()
     var body: some View {
         VStack{
@@ -60,13 +60,13 @@ struct KeyboardViewTest: View {
         HStack{
             VStack{
                 HStack{
-                    Text("Your Snips")
+                    Text("Your Shortcuts")
                         .font(.system(size: 18, weight: .bold))
                     Spacer()
                 }
                 if snip.isEmpty {
                     Spacer()
-                    Text("You don't have any snips yet.")
+                    Text("You don't have any shortcuts yet.")
                         .bold()
                     Spacer()
                 }else{

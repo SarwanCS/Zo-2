@@ -37,13 +37,14 @@ struct CreateTextSnip: View {
                 Spacer()
                 ZStack{
                     RoundedRectangle(cornerRadius: 15)
-                        .fill(scheme == .dark ? Color("CustomDarkGray") : Color.white)
+                        .fill(scheme == .dark ? Color("CustomDarkGrey") : Color.white)
                     RoundedRectangle(cornerRadius: 15)
                         .stroke(lineWidth: 3)
-                        .fill(scheme == .dark ? Color("CustomDarkGray") : Color.black)
+                        .fill(scheme == .dark ? Color("CustomDarkGrey") : Color.black)
                     HStack{
+                        //Subject to change
+                        //TextField("Create Text Shortcut...", text: $text)
                         TextEditor(text: $content)
-                            
                         Spacer()
                     }.padding()
                         .onAppear {
@@ -75,7 +76,7 @@ struct CreateTextSnip: View {
                     mode.wrappedValue.dismiss()
                     
                 } label: {
-                    CustomCreateButton(text: "CREATE SNIP", borderColor: scheme == .dark ? Color("CustomDarkGray") : .black , contentColor: scheme == .dark ?  Color("CustomDarkGray") : .white)
+                    CustomCreateButton(text: "CREATE SHORTCUT", borderColor: scheme == .dark ? Color("CustomDarkGrey") : .black , contentColor: scheme == .dark ?  Color("CustomDarkGrey") : .white)
                 }.padding(.bottom, 50)
 
             }.padding(.bottom, 50)
@@ -83,7 +84,7 @@ struct CreateTextSnip: View {
             
         }.overlay(
             HStack{
-                Text("Text Snip")
+                Text("Text Shortcut")
                     .font(.title)
                     .bold()
                     .padding(.leading)
@@ -91,7 +92,7 @@ struct CreateTextSnip: View {
                 Button {
                     mode.wrappedValue.dismiss()
                 } label: {
-                    Image("CancelButton")
+                    Image("cancelButton")
                 }.padding(.trailing, 40)
             }
                 .padding(.top, 80)
@@ -99,14 +100,7 @@ struct CreateTextSnip: View {
         ).navigationBarHidden(true)
         .navigationBarBackButtonHidden(true)
         .ignoresSafeArea()
-        .onAppear {
-            bottomNavigationBarViewModel.showBottomBar = false
-        }
-        .onDisappear {
-            withAnimation {
-                bottomNavigationBarViewModel.showBottomBar = true
-            }
-        }
+        
     }
     func update() {
         for snip in snips {
@@ -143,8 +137,33 @@ struct CreateTextSnip: View {
     }
 }
 
-//struct CreateTextSnip_Previews: PreviewProvider {
-//    static var previews: some View {
-//        CreateTextSnip()
-//    }
-//}
+/*
+struct CreateTextSnip_Previews: PreviewProvider {
+    static var previews: some View {
+        CreateTextSnip()
+            .preferredColorScheme(.light)
+    }
+}*/
+
+/*
+struct CustomTextField: View {
+    @Environment(\.colorScheme) var scheme
+    @Binding var text: String
+    var body: some View {
+        ZStack{
+            RoundedRectangle(cornerRadius: 15)
+                .fill(scheme == .dark ? Color("CustomDarkGrey") : Color.white)
+            RoundedRectangle(cornerRadius: 15)
+                .stroke(lineWidth: 3)
+                .fill(scheme == .dark ? Color("CustomDarkGrey") : Color.black)
+            HStack{
+                TextField("Shortcut Name...", text: $text)
+                Spacer()
+            }.padding()
+            
+        }
+        .frame(height: 60)
+        .padding(.horizontal, 30)
+            .padding(.bottom, 5)
+    }
+}*/

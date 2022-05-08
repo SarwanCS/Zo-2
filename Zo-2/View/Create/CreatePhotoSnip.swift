@@ -38,7 +38,7 @@ struct CreatePhotoSnip: View {
                 Button {
                    showImagePicker = true
                 } label: {
-                    CustomCreateButton(text: "Upload Photo", borderColor: scheme == .dark ? Color("CustomDarkGray") : Color("CustomGray") , contentColor: scheme == .dark ? Color("CustomDarkGray") : Color("CustomGray"))
+                    CustomCreateButton(text: "Upload Photo", borderColor: scheme == .dark ? Color("CustomDarkGrey") : Color("CustomGray") , contentColor: scheme == .dark ? Color("CustomDarkGrey") : Color("CustomGray"))
                 }.padding(.bottom, 5)
 
                 CustomTextField(text: $text)
@@ -60,7 +60,7 @@ struct CreatePhotoSnip: View {
                     
                     mode.wrappedValue.dismiss()
                 } label: {
-                    CustomCreateButton(text: "CREATE SNIP", borderColor: scheme == .dark ? Color("CustomDarkGray") : .black , contentColor: scheme == .dark ?  Color("CustomDarkGray") : .white)
+                    CustomCreateButton(text: "CREATE SHORTCUT", borderColor: scheme == .dark ? Color("CustomDarkGrey") : .black , contentColor: scheme == .dark ?  Color("CustomDarkGrey") : .white)
                 }.padding(.bottom, 50)
 
             }.padding(.bottom, 50)
@@ -73,7 +73,7 @@ struct CreatePhotoSnip: View {
         }
         .overlay(
             HStack{
-                Text("Photo Snip")
+                Text("Photo Shortcut")
                     .font(.title)
                     .bold()
                     .padding(.leading)
@@ -81,7 +81,7 @@ struct CreatePhotoSnip: View {
                 Button {
                     mode.wrappedValue.dismiss()
                 } label: {
-                    Image("CancelButton")
+                    Image("cancelButton")
                 }.padding(.trailing, 40)
             }
                 .padding(.top, 80)

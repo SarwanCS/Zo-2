@@ -31,7 +31,7 @@ struct BottomTabBar: View {
     
     var body: some View {
         if bottomNavigationBarViewModel.showBottomBar {
-            HStack{
+            HStack(spacing: 120){
                 Spacer()
                 Button {
                     withAnimation {
@@ -41,7 +41,7 @@ struct BottomTabBar: View {
                     Image(systemName: "house.circle")
                         .foregroundColor(pickedView == .home ? scheme == .dark ? .white : .black : .gray)
                 }
-                Spacer()
+                //Spacer()
                 Button {
                     withAnimation {
                         pickedView = .add
@@ -50,7 +50,7 @@ struct BottomTabBar: View {
                     Image(systemName: "plus.circle")
                         .foregroundColor(pickedView == .add ? scheme == .dark ? .white : .black : .gray)
                 }
-                Spacer()
+                //Spacer()
                 Button {
                     withAnimation {
                         pickedView = .settings

@@ -54,7 +54,7 @@ struct SignUpView: View {
             VStack(alignment: .leading){
                 Text("Create your account.")
                     .font(.system(size: 30, weight: .bold))
-                Text("Start creating your own Ships once you successfully sign up")
+                Text("Start creating your own shortcuts once you successfully sign up")
                 HStack{
                     Spacer()
                     SignInWithAppleButton(.signUp,
@@ -110,11 +110,11 @@ struct SignUpView: View {
             }
         }
 }
-//
+
 //struct SignUpView_Previews: PreviewProvider {
 //    static var previews: some View {
-//        SignUpView()
-//            .preferredColorScheme(.dark)
+//       SignUpView()
+//          .preferredColorScheme(.dark)
 //    }
 //}
 

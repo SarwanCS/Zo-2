@@ -28,12 +28,15 @@ struct WalkthroughThree: View {
                 Spacer()
                 VStack{
                     Image("Phone")
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
+                        .frame(width: 250)
                     Text("Using Shortcuts")
                         .font(.system(size: 30, weight: .bold))
-                        .padding(.top)
+                        .padding(.top, 60)
                         .padding(.bottom, 2)
-                    Text("Paste the content attached to a specific Shortcut, by tapping on it from the keyboard.")
-                        .underline()
+                    Text("Toggle Zo's keyboard and tap the shortcut you want to use.")
+                        //.underline()
                         .multilineTextAlignment(.center)
                         .padding(.horizontal, 30)
                 }
@@ -45,7 +48,11 @@ struct WalkthroughThree: View {
                             firstTime = false
                         }
                     } label: {
-                        Image("CompleteBtn")
+                        Image("completeButton")
+                            .resizable()
+                            //.scaledToFit()
+                            .aspectRatio(contentMode: .fit)
+                            .frame(width: 130)
                     }
 
                     HStack(spacing: 10){

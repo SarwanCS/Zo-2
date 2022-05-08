@@ -1,8 +1,8 @@
 //
 //  CreateURLSnip.swift
-//  Zo-2
+//  Zo
 //
-//  Created by Brian Heralall on 3/4/22.
+//  Created by Brian Heralall on 1/31/2022.
 //
 
 import SwiftUI
@@ -36,10 +36,10 @@ struct CreateURLSnip: View {
                 Spacer()
                 ZStack{
                     RoundedRectangle(cornerRadius: 15)
-                        .fill(scheme == .dark ? Color("CustomDarkGray") : Color.white)
+                        .fill(scheme == .dark ? Color("CustomDarkGrey") : Color.white)
                     RoundedRectangle(cornerRadius: 15)
                         .stroke(lineWidth: 3)
-                        .fill(scheme == .dark ? Color("CustomDarkGray") : Color.black)
+                        .fill(scheme == .dark ? Color("CustomDarkGrey") : Color.black)
                     HStack{
                         TextField("Paste URL Here...", text: $url)
                         Spacer()
@@ -69,7 +69,7 @@ struct CreateURLSnip: View {
                     
                     mode.wrappedValue.dismiss()
                 } label: {
-                    CustomCreateButton(text: "CREATE SNIP", borderColor: scheme == .dark ? Color("CustomDarkGray") : .black , contentColor: scheme == .dark ?  Color("CustomDarkGray") : .white)
+                    CustomCreateButton(text: "CREATE SHORTCUT", borderColor: scheme == .dark ? Color("CustomDarkGrey") : .black , contentColor: scheme == .dark ?  Color("CustomDarkGrey") : .white)
                 }.padding(.bottom, 50)
 
             }.padding(.bottom, 50)
@@ -77,7 +77,7 @@ struct CreateURLSnip: View {
             
         }.overlay(
             HStack{
-                Text("URL Snip")
+                Text("URL Shortcut")
                     .font(.title)
                     .bold()
                     .padding(.leading)
@@ -85,7 +85,7 @@ struct CreateURLSnip: View {
                 Button {
                     mode.wrappedValue.dismiss()
                 } label: {
-                    Image("CancelButton")
+                    Image("cancelButton")
                 }.padding(.trailing, 40)
             }
                 .padding(.top, 80)
@@ -117,5 +117,6 @@ struct CreateURLSnip: View {
 struct CreateURLSnip_Previews: PreviewProvider {
     static var previews: some View {
         CreateURLSnip()
+            .preferredColorScheme(.light)
     }
 }
