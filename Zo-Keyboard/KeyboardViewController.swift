@@ -70,7 +70,7 @@ struct KeyboardView: View {
                     Spacer()
                 }else{
                     ScrollView(.vertical, showsIndicators: false){
-                        VStack(alignment: .leading, spacing: 10){
+                        VStack(alignment: .leading, spacing: 5){
                             LazyVGrid(columns: [GridItem(.flexible()), GridItem(.flexible())], alignment: .leading) {
                                 ForEach(snip, id: \.self){ snip in
                                     Button {
