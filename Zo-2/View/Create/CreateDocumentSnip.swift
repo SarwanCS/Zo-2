@@ -14,6 +14,10 @@ struct CreateDocumentSnip: View {
     
     @State var text = ""
     
+    // Added by Michael, controls for showing Home Screen after
+    // shortcut creation
+    @State var showHomeView = false
+    
     @State private var document: MessageDocument = MessageDocument(message: "Hello, World!")
     @State private var isImporting: Bool = false
     
@@ -60,6 +64,9 @@ struct CreateDocumentSnip: View {
                     updateDefaults()
                     
                     mode.wrappedValue.dismiss()
+                    // Added by Michael, sets boolean to true
+                    // To trigger return to Home
+                    showHomeView = true
                     
                 } label: {
                     CustomCreateButton(text: "CREATE SHORTCUT", borderColor: scheme == .dark ? Color("CustomDarkGrey") : .black , contentColor: scheme == .dark ?  Color("CustomDarkGrey") : .white)
@@ -96,6 +103,7 @@ struct CreateDocumentSnip: View {
                 Spacer()
                 Button {
                     mode.wrappedValue.dismiss()
+                    
                 } label: {
                     Image("cancelButton")
                 }.padding(.trailing, 40)
@@ -105,6 +113,8 @@ struct CreateDocumentSnip: View {
         ).navigationBarHidden(true)
         .navigationBarBackButtonHidden(true)
         .ignoresSafeArea()
+        // Added by Michael, for returning to HomeView
+        .fullScreenCover(isPresented: $showHomeView, content: {HomeView()})
     }
     func updateDefaults() {
         let snip = Sniptest(name: text, content: document.message, color: "DocumentSnipColor", image: "doc.fill", picked: Data())

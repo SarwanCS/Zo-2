@@ -16,6 +16,10 @@ struct CreatePhotoSnip: View {
     
     @State var data = Data()
     @State var showImagePicker: Bool = false
+    
+    // Added by Michael, controls for showing Home Screen after
+    // shortcut creation
+    @State var showHomeView = false
  
     @EnvironmentObject var dataController: DataController
     @FetchRequest(sortDescriptors: []) var snips: FetchedResults<Snip>
@@ -59,6 +63,9 @@ struct CreatePhotoSnip: View {
                     updateDefaults()
                     
                     mode.wrappedValue.dismiss()
+                    // Added by Michael, sets boolean to true
+                    // To trigger return to Home
+                    showHomeView = true
                 } label: {
                     CustomCreateButton(text: "CREATE SHORTCUT", borderColor: scheme == .dark ? Color("CustomDarkGrey") : .black , contentColor: scheme == .dark ?  Color("CustomDarkGrey") : .white)
                 }.padding(.bottom, 50)
@@ -89,6 +96,8 @@ struct CreatePhotoSnip: View {
         ).navigationBarHidden(true)
         .navigationBarBackButtonHidden(true)
         .ignoresSafeArea()
+        // Added by Michael, for returning to HomeView
+        .fullScreenCover(isPresented: $showHomeView, content: {HomeView()})
     }
     func updateDefaults() {
         let snip = Sniptest(name: text, content: "", color: "ImageSnipColor", image: "photo", picked: data)

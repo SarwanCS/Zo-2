@@ -14,6 +14,11 @@ struct CreateTextSnip: View {
         
     @State var text = ""
     @State var content = ""
+    
+    // Added by Michael, controls for showing Home Screen after
+    // shortcut creation
+    @State var showHomeView = false
+    
     @ObservedObject var bottomNavigationBarViewModel: BottomNavigationBarViewModel
     
     @EnvironmentObject var dataController: DataController
@@ -74,6 +79,9 @@ struct CreateTextSnip: View {
                     updateDefaults()
                     
                     mode.wrappedValue.dismiss()
+                    // Added by Michael, sets boolean to true
+                    // To trigger return to Home
+                    showHomeView = true
                     
                 } label: {
                     CustomCreateButton(text: "CREATE SHORTCUT", borderColor: scheme == .dark ? Color("CustomDarkGrey") : .black , contentColor: scheme == .dark ?  Color("CustomDarkGrey") : .white)
@@ -100,6 +108,8 @@ struct CreateTextSnip: View {
         ).navigationBarHidden(true)
         .navigationBarBackButtonHidden(true)
         .ignoresSafeArea()
+        // Added by Michael, for returning to HomeView
+        .fullScreenCover(isPresented: $showHomeView, content: {HomeView()})
         
     }
     func update() {
