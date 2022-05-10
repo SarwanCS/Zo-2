@@ -604,7 +604,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Zo-2/Preview Content\"";
-				DEVELOPMENT_TEAM = DVZ97926YJ;
+				DEVELOPMENT_TEAM = N7AL96QZCQ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Zo-2/Info.plist";
@@ -619,7 +619,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "BrianHeralall.Zo-2";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Zo-2";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -637,7 +637,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Zo-2/Preview Content\"";
-				DEVELOPMENT_TEAM = DVZ97926YJ;
+				DEVELOPMENT_TEAM = N7AL96QZCQ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Zo-2/Info.plist";
@@ -652,7 +652,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "BrianHeralall.Zo-2";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Zo-2";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -666,7 +666,7 @@
 				CODE_SIGN_ENTITLEMENTS = "Zo-Keyboard/Zo-Keyboard.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = DVZ97926YJ;
+				DEVELOPMENT_TEAM = N7AL96QZCQ;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Zo-Keyboard/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "Zo-Keyboard";
@@ -677,7 +677,7 @@
 					"@executable_path/../../Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "BrianHeralall.Zo-2.Zo-Keyboard";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Zo-2.Zo-Keyboard";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -692,7 +692,7 @@
 				CODE_SIGN_ENTITLEMENTS = "Zo-Keyboard/Zo-Keyboard.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = DVZ97926YJ;
+				DEVELOPMENT_TEAM = N7AL96QZCQ;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Zo-Keyboard/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "Zo-Keyboard";
@@ -703,7 +703,7 @@
 					"@executable_path/../../Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "BrianHeralall.Zo-2.Zo-Keyboard";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Zo-2.Zo-Keyboard";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
