@@ -23,4 +23,4 @@ class DataController: NSObject, ObservableObject {
     }
 }
 
-let shareDefault = UserDefaults(suiteName: "group.zo")!
+let shareDefault = UserDefaults(suiteName: "group.zoapp")!

@@ -100,9 +100,6 @@ struct KeyboardView: View {
                 Spacer()
             }
             Spacer()
-        }.onAppear {
-            print("👾👾👾👾👾👾👾👾👾")
-            print(snip)
         }
     }
 }

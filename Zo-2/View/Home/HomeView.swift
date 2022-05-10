@@ -86,7 +86,11 @@ struct HomeView: View {
                 
         }
         .onAppear(perform: {
+//            print(snips)
             update()
+            
+//            print(defaultsSnipsArray)
+            
         })
         
     }

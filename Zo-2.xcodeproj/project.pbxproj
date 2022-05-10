@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0057F2712829AD9C002C9DC8 /* KeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00D05CAD27D28D4300953FF3 /* KeyboardViewController.swift */; };
 		00A3BA202809F2A500AFB3FB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00D05C5E27D26B0D00953FF3 /* Assets.xcassets */; };
 		00D05C5B27D26B0C00953FF3 /* Zo_2App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00D05C5A27D26B0C00953FF3 /* Zo_2App.swift */; };
 		00D05C5D27D26B0C00953FF3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00D05C5C27D26B0C00953FF3 /* ContentView.swift */; };
@@ -417,6 +418,7 @@
 				00D05C8A27D2866500953FF3 /* ChangeThemeHandler.swift in Sources */,
 				00D05C7727D2849D00953FF3 /* HomeView.swift in Sources */,
 				00D05C7B27D284F200953FF3 /* WalkthroughTwo.swift in Sources */,
+				0057F2712829AD9C002C9DC8 /* KeyboardViewController.swift in Sources */,
 				00D05C5D27D26B0C00953FF3 /* ContentView.swift in Sources */,
 				00D05C9727D288F800953FF3 /* DataController.swift in Sources */,
 				00D05C8627D2864900953FF3 /* Global.swift in Sources */,
@@ -600,7 +602,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Zo-2/Preview Content\"";
-				DEVELOPMENT_TEAM = DVZ97926YJ;
+				DEVELOPMENT_TEAM = N7AL96QZCQ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Zo-2/Info.plist";
@@ -615,7 +617,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "BrianHeralall.Zo-2";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Zo-2";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -633,7 +635,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Zo-2/Preview Content\"";
-				DEVELOPMENT_TEAM = DVZ97926YJ;
+				DEVELOPMENT_TEAM = N7AL96QZCQ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Zo-2/Info.plist";
@@ -648,7 +650,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "BrianHeralall.Zo-2";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Zo-2";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -662,7 +664,7 @@
 				CODE_SIGN_ENTITLEMENTS = "Zo-Keyboard/Zo-Keyboard.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = DVZ97926YJ;
+				DEVELOPMENT_TEAM = N7AL96QZCQ;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Zo-Keyboard/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "Zo-Keyboard";
@@ -673,7 +675,7 @@
 					"@executable_path/../../Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "BrianHeralall.Zo-2.Zo-Keyboard";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Zo-2.Zo-Keyboard";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -688,7 +690,7 @@
 				CODE_SIGN_ENTITLEMENTS = "Zo-Keyboard/Zo-Keyboard.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = DVZ97926YJ;
+				DEVELOPMENT_TEAM = N7AL96QZCQ;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Zo-Keyboard/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "Zo-Keyboard";
@@ -699,7 +701,7 @@
 					"@executable_path/../../Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "BrianHeralall.Zo-2.Zo-Keyboard";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Zo-2.Zo-Keyboard";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
