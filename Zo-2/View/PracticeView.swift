@@ -74,7 +74,7 @@ struct KeyboardViewTest: View {
                         ForEach(snip, id: \.self){ snip in
                             Button {
                                 if snip.color == "ImageSnipColor" {
-                                    UIPasteboard.general.setData(snip.picked, forPasteboardType: UTType.png.identifier)
+                                    UIPasteboard.general.setData(snip.pickedimage, forPasteboardType: UTType.png.identifier)
                                 }else{
                                     printOut(snip.content)
                                 }
@@ -104,7 +104,7 @@ struct KeyboardViewTest: View {
 
 struct Previews_KeyboardViewController_Previews: PreviewProvider {
     static var previews: some View {
-        KeyboardViewTest(snip: [Sniptest(name: "test", content: "", color: "TextSnipColor", image: "house", picked: Data()), Sniptest(name: "test", content: "", color: "TextSnipColor", image: "house", picked: Data())]) { _ in
+        KeyboardViewTest(snip: [Sniptest(name: "test", content: "", color: "TextSnipColor", image: "house", pickedimage: Data()), Sniptest(name: "test", content: "", color: "TextSnipColor", image: "house", pickedimage: Data())]) { _ in
             
         }
     }

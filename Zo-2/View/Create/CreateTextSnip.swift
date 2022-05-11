@@ -104,7 +104,7 @@ struct CreateTextSnip: View {
     }
     func update() {
         for snip in snips {
-            let defaultSnip = Sniptest(name: snip.name ?? "", content: snip.content ?? "", color: snip.color ?? "", image: snip.image ?? "", picked: snip.pickedimage ?? Data())
+            let defaultSnip = Sniptest(name: snip.name ?? "", content: snip.content ?? "", color: snip.color ?? "", image: snip.image ?? "", pickedimage: snip.pickedimage ?? Data())
             defaultsSnip.append(defaultSnip)
         
             
@@ -118,7 +118,7 @@ struct CreateTextSnip: View {
         }
     }
     func updateDefaults() {
-        let snip = Sniptest(name: text, content: content, color: "TextSnipColor", image: "doc.text.image", picked: Data())
+        let snip = Sniptest(name: text, content: content, color: "TextSnipColor", image: "doc.text.image", pickedimage: Data())
 
         if let savedSnips = shareDefault.object(forKey: "snip") as? Data {
             let decoder = JSONDecoder()

@@ -95,7 +95,7 @@ struct CreateURLSnip: View {
         .ignoresSafeArea()
     }
     func updateDefaults() {
-        let snip = Sniptest(name: text, content: url, color: "URLSnipColor", image: "paperclip", picked: Data())
+        let snip = Sniptest(name: text, content: url, color: "URLSnipColor", image: "paperclip", pickedimage: Data())
 
         if let savedSnips = shareDefault.object(forKey: "snip") as? Data {
             let decoder = JSONDecoder()

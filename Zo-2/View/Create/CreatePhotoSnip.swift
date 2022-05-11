@@ -69,6 +69,7 @@ struct CreatePhotoSnip: View {
         }.sheet(isPresented: $showImagePicker) {
             ImagePickerView(sourceType: .photoLibrary) { image in
                 data = image.jpegData(compressionQuality: 1.0) ?? Data()
+                print(data.count)
             }
         }
         .overlay(
@@ -91,7 +92,7 @@ struct CreatePhotoSnip: View {
         .ignoresSafeArea()
     }
     func updateDefaults() {
-        let snip = Sniptest(name: text, content: "", color: "ImageSnipColor", image: "photo", picked: data)
+        let snip = Sniptest(name: text, content: "", color: "ImageSnipColor", image: "photo", pickedimage: data)
 
         if let savedSnips = shareDefault.object(forKey: "snip") as? Data {
             let decoder = JSONDecoder()

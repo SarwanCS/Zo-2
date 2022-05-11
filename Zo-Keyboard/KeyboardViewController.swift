@@ -75,7 +75,11 @@ struct KeyboardView: View {
                                 ForEach(snip, id: \.self){ snip in
                                     Button {
                                         if snip.image == "photo" {
-                                            UIPasteboard.general.setData(snip.picked, forPasteboardType: UTType.png.identifier)
+                                            //UIPasteboard.general.setData(snip.pickedimage, forPasteboardType: UTType.png.identifier)
+                                            //printOut("Executing") image
+                                            let image = UIImage(data: snip.pickedimage)
+                                            UIPasteboard.general.image = image;
+
                                         }else{
                                             printOut(snip.content)
                                         }

@@ -12,5 +12,5 @@ struct Sniptest: Hashable, Codable {
     var content: String
     var color: String
     var image: String
-    var picked: Data
+    var pickedimage: Data
 }

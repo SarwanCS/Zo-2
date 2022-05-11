@@ -96,7 +96,7 @@ struct HomeView: View {
     }
     func update() {
         for snip in snips {
-            let defaultSnip = Sniptest(name: snip.name ?? "", content: snip.content ?? "", color: snip.color ?? "", image: snip.image ?? "", picked: snip.pickedimage ?? Data())
+            let defaultSnip = Sniptest(name: snip.name ?? "", content: snip.content ?? "", color: snip.color ?? "", image: snip.image ?? "", pickedimage: snip.pickedimage ?? Data())
             defaultsSnipsArray.append(defaultSnip)
         
             let encoder = JSONEncoder()

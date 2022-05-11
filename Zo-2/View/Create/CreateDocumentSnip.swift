@@ -107,7 +107,7 @@ struct CreateDocumentSnip: View {
         .ignoresSafeArea()
     }
     func updateDefaults() {
-        let snip = Sniptest(name: text, content: document.message, color: "DocumentSnipColor", image: "doc.fill", picked: Data())
+        let snip = Sniptest(name: text, content: document.message, color: "DocumentSnipColor", image: "doc.fill", pickedimage: Data())
 
         if let savedSnips = shareDefault.object(forKey: "snip") as? Data {
             let decoder = JSONDecoder()
