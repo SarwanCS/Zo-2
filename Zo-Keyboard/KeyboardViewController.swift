@@ -79,7 +79,7 @@ struct KeyboardView: View {
                                             //printOut("Executing") image
                                             let image = UIImage(data: snip.pickedimage)
                                             UIPasteboard.general.image = image;
-
+                                            
                                         }else{
                                             printOut(snip.content)
                                         }

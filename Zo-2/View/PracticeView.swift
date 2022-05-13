@@ -49,7 +49,7 @@ struct PracticeView3: View {
 
 struct KeyboardViewTest: View {
     
-    @State private var document: MessageDocument = MessageDocument(message: "Hello, World!")
+    //@State private var document: MessageDocument = MessageDocument(message: "Hello, World!")
     @State private var isExporting: Bool = false
     
     let rows = [GridItem(.fixed(150)), GridItem(.adaptive(minimum: 50))]

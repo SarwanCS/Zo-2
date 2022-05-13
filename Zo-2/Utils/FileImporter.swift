@@ -31,4 +31,6 @@ struct MessageDocument: FileDocument {
         return FileWrapper(regularFileWithContents: message.data(using: .utf8)!)
     }
     
+    
+    
 }

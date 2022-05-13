@@ -86,10 +86,10 @@ struct HomeView: View {
                 
         }
         .onAppear(perform: {
-//            print(snips)
+            //print(snips)
             update()
             
-//            print(defaultsSnipsArray)
+            //print(defaultsSnipsArray)
             
         })
         
@@ -112,6 +112,29 @@ struct CustomGridCell: View {
     @Binding var longPressed: Bool
     @Environment(\.managedObjectContext) var moc
     let cellSize = screenW/2 - 29
+    
+    func RemoveShortcut(delName: String!) {
+        var a: [Sniptest] = []
+        
+        if let savedSnips = shareDefault.object(forKey: "snip") as? Data {
+            let decoder = JSONDecoder()
+            if let loadedSnip = try? decoder.decode([Sniptest].self, from: savedSnips) {
+                a = loadedSnip.uniqued()
+            }
+            
+        }
+        if let index = a.firstIndex(where: {
+            $0.name == delName}){
+            a.remove(at: index)
+        }
+        /*let defaultSnip = Sniptest(name: "Third", content: "Third Content", color: "TextSnipColor", image: "doc.text.image", pickedimage: Data())
+        a.append(defaultSnip)*/
+        let encoder = JSONEncoder()
+        if let encoded = try? encoder.encode(a) {
+            shareDefault.set(encoded, forKey: "snip")
+    }
+    }
+    
     var body: some View {
         ZStack{
             RoundedRectangle(cornerRadius: 20)
@@ -131,6 +154,8 @@ struct CustomGridCell: View {
             ZStack{
                 if longPressed {
                     Button(action: {
+                        //HomeView.removeSnip(snip.name)
+                        RemoveShortcut(delName: snip.name)
                         moc.delete(snip)
                         try? moc.save()
                     }, label: {
@@ -151,4 +176,5 @@ struct CustomGridCell: View {
         .padding(.horizontal,25)
     }
 }
+
 

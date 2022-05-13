@@ -52,7 +52,6 @@ struct CreatePhotoSnip: View {
                     coreDataSnip.color = "ImageSnipColor"
                     coreDataSnip.image = "photo"
                     coreDataSnip.content = ""
-                    coreDataSnip.pickedimage = data
                     
                     try? moc.save()
                     
@@ -68,8 +67,8 @@ struct CreatePhotoSnip: View {
             
         }.sheet(isPresented: $showImagePicker) {
             ImagePickerView(sourceType: .photoLibrary) { image in
-                data = image.jpegData(compressionQuality: 1.0) ?? Data()
-                print(data.count)
+                data = image.jpegData(compressionQuality: 0.2) ?? Data()
+                print("Size of data is:  \(data.count) bytes")
             }
         }
         .overlay(
