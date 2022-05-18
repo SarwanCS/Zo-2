@@ -52,7 +52,7 @@ struct WalkthroughOne: View {
                         .font(.system(size: 30, weight: .bold))
                         .padding(.top, 80)
                         .padding(.bottom, 2)
-                    Text("Constantly sharing the same pictures, text, phrases, files or links? Create a Snip")
+                    Text("Constantly sharing the same pictures, text, phrases, files or links? Create a Shortcut")
                         .multilineTextAlignment(.center)
                         .padding(.horizontal, 30)
                 }.padding(.top, 90)

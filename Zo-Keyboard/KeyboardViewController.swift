@@ -59,7 +59,7 @@ struct KeyboardView: View {
         HStack{
             VStack{
                 HStack{
-                    Text("Your Zo Shortcuts")
+                    Text("Your ZoZo Shortcuts")
                         .font(.system(size: 18, weight: .bold))
                     Spacer()
                 }.padding()

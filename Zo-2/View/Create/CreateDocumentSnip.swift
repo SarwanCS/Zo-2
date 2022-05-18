@@ -14,6 +14,8 @@ struct CreateDocumentSnip: View {
     
     @State var text = ""
     
+    //@State var showHomeView = false
+    
     @State private var document: MessageDocument = MessageDocument(message: "Hello, World!")
     @State private var isImporting: Bool = false
     
@@ -61,6 +63,8 @@ struct CreateDocumentSnip: View {
                     
                     mode.wrappedValue.dismiss()
                     
+                    //showHomeView = true
+                    
                 } label: {
                     CustomCreateButton(text: "CREATE SHORTCUT", borderColor: scheme == .dark ? Color("CustomDarkGrey") : .black , contentColor: scheme == .dark ?  Color("CustomDarkGrey") : .white)
                 }.padding(.bottom, 50)
@@ -105,6 +109,8 @@ struct CreateDocumentSnip: View {
         ).navigationBarHidden(true)
         .navigationBarBackButtonHidden(true)
         .ignoresSafeArea()
+        
+        //.fullScreenCover(isPresented: $showHomeView, content: {HomeView()})
     }
     func updateDefaults() {
         let snip = Sniptest(name: text, content: document.message, color: "DocumentSnipColor", image: "doc.fill", pickedimage: Data())

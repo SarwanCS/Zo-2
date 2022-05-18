@@ -8,7 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		0057F2712829AD9C002C9DC8 /* KeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00D05CAD27D28D4300953FF3 /* KeyboardViewController.swift */; };
+		0070367828331F26002B88B7 /* NewLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0070367728331F26002B88B7 /* NewLogin.swift */; };
+		0070367928331F2E002B88B7 /* NewLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0070367728331F26002B88B7 /* NewLogin.swift */; };
 		00A3BA202809F2A500AFB3FB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00D05C5E27D26B0D00953FF3 /* Assets.xcassets */; };
+		00C89D172832E01700042DD7 /* EmailHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C89D162832E01700042DD7 /* EmailHelper.swift */; };
 		00D05C5B27D26B0C00953FF3 /* Zo_2App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00D05C5A27D26B0C00953FF3 /* Zo_2App.swift */; };
 		00D05C5D27D26B0C00953FF3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00D05C5C27D26B0C00953FF3 /* ContentView.swift */; };
 		00D05C5F27D26B0D00953FF3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00D05C5E27D26B0D00953FF3 /* Assets.xcassets */; };
@@ -90,6 +93,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0070367728331F26002B88B7 /* NewLogin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewLogin.swift; sourceTree = "<group>"; };
+		00C89D162832E01700042DD7 /* EmailHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailHelper.swift; sourceTree = "<group>"; };
 		00D05C5727D26B0C00953FF3 /* Zo-2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Zo-2.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		00D05C5A27D26B0C00953FF3 /* Zo_2App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Zo_2App.swift; sourceTree = "<group>"; };
 		00D05C5C27D26B0C00953FF3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -255,6 +260,7 @@
 			children = (
 				00D05C8027D2856900953FF3 /* LogInView.swift */,
 				00D05C8227D2857300953FF3 /* SignUpView.swift */,
+				0070367728331F26002B88B7 /* NewLogin.swift */,
 			);
 			path = Authentication;
 			sourceTree = "<group>";
@@ -280,6 +286,7 @@
 				00D05C8B27D2867200953FF3 /* ImagePicker.swift */,
 				00D05C8D27D2868000953FF3 /* Extensions.swift */,
 				00D05C8F27D2868D00953FF3 /* FileImporter.swift */,
+				00C89D162832E01700042DD7 /* EmailHelper.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -415,6 +422,7 @@
 				00D05C7927D284E800953FF3 /* WalkthroughOne.swift in Sources */,
 				00D05C9227D2879100953FF3 /* PracticeView.swift in Sources */,
 				00D05C8C27D2867200953FF3 /* ImagePicker.swift in Sources */,
+				0070367828331F26002B88B7 /* NewLogin.swift in Sources */,
 				00D05C8A27D2866500953FF3 /* ChangeThemeHandler.swift in Sources */,
 				00D05C7727D2849D00953FF3 /* HomeView.swift in Sources */,
 				00D05C7B27D284F200953FF3 /* WalkthroughTwo.swift in Sources */,
@@ -429,6 +437,7 @@
 				00D05CA327D28BF000953FF3 /* CreateURLSnip.swift in Sources */,
 				00D05C8827D2865700953FF3 /* Logo.swift in Sources */,
 				00D05C7F27D2851200953FF3 /* WalkthroughDelegate.swift in Sources */,
+				00C89D172832E01700042DD7 /* EmailHelper.swift in Sources */,
 				00D05CA627D28C6B00953FF3 /* DataModel.xcdatamodeld in Sources */,
 				00D05C9027D2868D00953FF3 /* FileImporter.swift in Sources */,
 				00D05C9F27D28BC800953FF3 /* CreateTextSnip.swift in Sources */,
@@ -451,6 +460,7 @@
 				00D05CC927D2900700953FF3 /* WalkthroughThree.swift in Sources */,
 				00D05CC027D28F0D00953FF3 /* CreateView.swift in Sources */,
 				00D05CC827D2900400953FF3 /* WalkthroughTwo.swift in Sources */,
+				0070367928331F2E002B88B7 /* NewLogin.swift in Sources */,
 				00D05CBF27D28E1900953FF3 /* HomeView.swift in Sources */,
 				00D05CBD27D28DEB00953FF3 /* Extensions.swift in Sources */,
 				00D05CCF27D2989600953FF3 /* DataModel.xcdatamodeld in Sources */,

@@ -18,6 +18,8 @@ struct ZoApp: App {
     @State private var isDarkModeOn = false
     @State var loggedIn = false
     
+    //var vm = UserStateViewModel
+    
     @StateObject var dataController = DataController()
     
     init(){
@@ -33,17 +35,17 @@ struct ZoApp: App {
                     .environment(\.managedObjectContext, dataController.container.viewContext)
                     .environmentObject(dataController)
             }else{
-                if signedUp {
+                //if signedUp {
                     if loggedIn {
                         ContentView()
                             .environment(\.managedObjectContext, dataController.container.viewContext)
                             .environmentObject(dataController)
                     }else{
-                        LogInView(loggedIn: $loggedIn)
+                        NewLogin(loggedIn: $loggedIn)
                     }
-                }else{
-                    SignUpView(loggedIn: $loggedIn)
-                }
+                //}else{
+                    //NewLogin(loggedIn: $loggedIn)
+                //}
             }
         }
     }
@@ -65,5 +67,7 @@ struct ZoApp: App {
         (UIApplication.shared.connectedScenes.first as? UIWindowScene)?.windows.first!.overrideUserInterfaceStyle = state ?   .dark : .light
         UserDefaultsUtils.shared.setDarkMode(enable: state)
     }
+    
+    
 }
 

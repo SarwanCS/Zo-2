@@ -11,6 +11,8 @@ struct CreateTextSnip: View {
     
     @Environment(\.presentationMode) var mode
     @Environment(\.colorScheme) var scheme
+    
+    //@State var showHomeView = false
         
     @State var text = ""
     @State var content = ""
@@ -75,6 +77,8 @@ struct CreateTextSnip: View {
                     
                     mode.wrappedValue.dismiss()
                     
+                    //showHomeView = true
+                    
                 } label: {
                     CustomCreateButton(text: "CREATE SHORTCUT", borderColor: scheme == .dark ? Color("CustomDarkGrey") : .black , contentColor: scheme == .dark ?  Color("CustomDarkGrey") : .white)
                 }.padding(.bottom, 50)
@@ -100,6 +104,8 @@ struct CreateTextSnip: View {
         ).navigationBarHidden(true)
         .navigationBarBackButtonHidden(true)
         .ignoresSafeArea()
+        
+        //.fullScreenCover(isPresented: $showHomeView, content: {HomeView()})
         
     }
     func update() {

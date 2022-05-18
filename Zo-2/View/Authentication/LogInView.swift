@@ -5,12 +5,15 @@
 //  Created by Brian Heralall on 3/4/22.
 //
 
+/*
+
 import SwiftUI
 import AuthenticationServices
 
 struct LogInView: View {
-    @Environment(\.colorScheme) var scheme
     
+    @Environment(\.colorScheme) var colorScheme
+    @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
     @Binding var loggedIn: Bool
     
     var body: some View {
@@ -31,17 +34,19 @@ struct LogInView: View {
                 VStack{
                     Spacer()
                     VStack(alignment: .leading){
-                        Text("Welcome to Zo!")
+                        Text("Welcome to ZoZo!")
                             .font(.system(size: 30, weight: .bold))
                             .padding(.bottom, 2)
-                        Text("Create shortcuts for the pictures, text phrases, files & links you use the most and access them right from the Snip keyboard.")
+                        Text("Create shortcuts for the pictures, text phrases, files & links you use the most and access them right from the ZoZo keyboard.")
                         HStack{
                             Spacer()
-                            SignInWithAppleButton(.signIn,
-                                                  onRequest: configure,
-                                                  onCompletion: handle)
+                            SignInWithAppleButton(
+                                .signIn,
+                                onRequest: configure,
+                                onCompletion: handle
+                            )
                                 .signInWithAppleButtonStyle(
-                                    scheme == .dark ? .white : .black
+                                    colorScheme == .dark ? .white : .black
                                 )
                                 .frame(height: 45)
                             .padding()
@@ -51,7 +56,7 @@ struct LogInView: View {
                     }.padding(30)
                         .padding(.bottom, 70)
                     Spacer()
-                    HStack{
+                    /*HStack{
                         Text("Don't have an account?")
                         NavigationLink {
                             SignUpView(loggedIn: $loggedIn)
@@ -62,20 +67,21 @@ struct LogInView: View {
                         }.foregroundColor(scheme == .dark ? .white : .black)
 
 
-                    }.padding(.bottom, 40)
+                    }.padding(.bottom, 40)*/
                 }
             }.overlay(alignment: .topLeading, content: {
                 Logo()
                     .padding(40)
             })
             .ignoresSafeArea()
+            .navigationBarBackButtonHidden(true)
+            .navigationBarTitle("")
             .navigationBarHidden(true)
         }
         
     }
     func configure(_ request: ASAuthorizationAppleIDRequest) {
             request.requestedScopes = [.fullName, .email]
-    //        request.nonce = ""
         }
         
         func handle(_ authResult: Result<ASAuthorization, Error>) {
@@ -87,6 +93,8 @@ struct LogInView: View {
                     if let appleUser = AppleUser(credentials: appleIdCredentials),
                        let appleUserData = try? JSONEncoder().encode(appleUser) {
                         UserDefaults.standard.setValue(appleUserData, forKey: appleUser.userId)
+                        
+                        print("saved apple user", appleUser)
                         
                     } else {
                         guard
@@ -111,3 +119,5 @@ struct LogInView: View {
 //            .preferredColorScheme(.light)
 //    }
 //}
+
+*/

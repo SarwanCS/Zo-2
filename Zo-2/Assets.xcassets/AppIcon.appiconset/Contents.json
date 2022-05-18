@@ -1,103 +1,103 @@
 {
   "images" : [
     {
-      "filename" : "zo40.jpg",
+      "filename" : "40x40.png",
       "idiom" : "iphone",
       "scale" : "2x",
       "size" : "20x20"
     },
     {
-      "filename" : "zo40-1.jpg",
+      "filename" : "60x60 (1).png",
       "idiom" : "iphone",
       "scale" : "3x",
       "size" : "20x20"
     },
     {
-      "filename" : "zo40-2.jpg",
+      "filename" : "58x58 (1).png",
       "idiom" : "iphone",
       "scale" : "2x",
       "size" : "29x29"
     },
     {
-      "filename" : "zo40-3.jpg",
+      "filename" : "87x87.png",
       "idiom" : "iphone",
       "scale" : "3x",
       "size" : "29x29"
     },
     {
-      "filename" : "zo40-4.jpg",
+      "filename" : "80x80.png",
       "idiom" : "iphone",
       "scale" : "2x",
       "size" : "40x40"
     },
     {
-      "filename" : "zo40-5.jpg",
+      "filename" : "120x120.png",
       "idiom" : "iphone",
       "scale" : "3x",
       "size" : "40x40"
     },
     {
-      "filename" : "zo40-6.jpg",
+      "filename" : "120x120-1.png",
       "idiom" : "iphone",
       "scale" : "2x",
       "size" : "60x60"
     },
     {
-      "filename" : "zo40-7.jpg",
+      "filename" : "180x180.png",
       "idiom" : "iphone",
       "scale" : "3x",
       "size" : "60x60"
     },
     {
-      "filename" : "zo40-8.jpg",
+      "filename" : "20x20.png",
       "idiom" : "ipad",
       "scale" : "1x",
       "size" : "20x20"
     },
     {
-      "filename" : "zo40-9.jpg",
+      "filename" : "40x40 (1).png",
       "idiom" : "ipad",
       "scale" : "2x",
       "size" : "20x20"
     },
     {
-      "filename" : "zo40-10.jpg",
+      "filename" : "29x29.png",
       "idiom" : "ipad",
       "scale" : "1x",
       "size" : "29x29"
     },
     {
-      "filename" : "zo40-11.jpg",
+      "filename" : "58x58 (2).png",
       "idiom" : "ipad",
       "scale" : "2x",
       "size" : "29x29"
     },
     {
-      "filename" : "zo40-12.jpg",
+      "filename" : "40x40 (1)-1.png",
       "idiom" : "ipad",
       "scale" : "1x",
       "size" : "40x40"
     },
     {
-      "filename" : "zo40-13.jpg",
+      "filename" : "80x80 (1).png",
       "idiom" : "ipad",
       "scale" : "2x",
       "size" : "40x40"
     },
     {
-      "filename" : "zo40-14.jpg",
+      "filename" : "76x76.png",
       "idiom" : "ipad",
       "scale" : "1x",
       "size" : "76x76"
     },
     {
-      "filename" : "zo40-15.jpg",
+      "filename" : "152x152.png",
       "idiom" : "ipad",
       "scale" : "2x",
       "size" : "76x76"
     },
     {
-      "filename" : "zo40-16.jpg",
+      "filename" : "168x168.png",
       "idiom" : "ipad",
       "scale" : "2x",
       "size" : "83.5x83.5"

@@ -23,10 +23,10 @@ struct WalkthroughDelegate: View {
     var body: some View {
         ZStack{
             if isSkipped {
-                SignUpView(loggedIn: $loggedIn)
+                NewLogin(loggedIn: $loggedIn)
             }else{
                 ZStack{
-                    SignUpView(loggedIn: $loggedIn)
+                    NewLogin(loggedIn: $loggedIn)
                     WalkthroughThree(isSkipped: $isSkipped)
                         .background(scheme == .dark ? .black : .white)
                         .zIndex(1)

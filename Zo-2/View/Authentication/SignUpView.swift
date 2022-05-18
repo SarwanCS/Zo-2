@@ -5,8 +5,10 @@
 //  Created by Brian Heralall on 3/4/22.
 //
 
+/*
 import SwiftUI
 import AuthenticationServices
+
 
 struct AppleUser: Codable {
     let userId: String
@@ -94,6 +96,8 @@ struct SignUpView: View {
                        let appleUserData = try? JSONEncoder().encode(appleUser) {
                         UserDefaults.standard.setValue(appleUserData, forKey: appleUser.userId)
                         
+                        print("saved apple user", appleUser)
+                        
                     } else {
                         guard
                             let appleUserData = UserDefaults.standard.data(forKey: appleIdCredentials.user),
@@ -118,3 +122,4 @@ struct SignUpView: View {
 //    }
 //}
 
+ */

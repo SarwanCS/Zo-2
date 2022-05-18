@@ -10,7 +10,7 @@ import SwiftUI
 struct Logo: View {
     var body: some View {
         ZStack{
-            Image("Zwhite")
+            /*Image("Zwhite")
                 .resizable()
                 .scaledToFit()
                 .frame(height: 35)
@@ -19,7 +19,12 @@ struct Logo: View {
                 .resizable()
                 .scaledToFit()
                 .frame(height: 35)
-                .offset(x: 5)
+                .offset(x: 5)*/
+            Image("Logo")
+                .resizable()
+                .scaledToFit()
+                .frame(height: 35)
+                .opacity(0.99)
         }
     }
 }

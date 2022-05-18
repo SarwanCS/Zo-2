@@ -35,7 +35,7 @@ struct WalkthroughThree: View {
                         .font(.system(size: 30, weight: .bold))
                         .padding(.top, 60)
                         .padding(.bottom, 2)
-                    Text("Toggle Zo's keyboard and tap the shortcut you want to use.")
+                    Text("After turning on the ZoZo keyboard, tap a Shortcut you created to use it at anytime.")
                         //.underline()
                         .multilineTextAlignment(.center)
                         .padding(.horizontal, 30)

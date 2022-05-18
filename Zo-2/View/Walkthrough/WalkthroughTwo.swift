@@ -61,7 +61,7 @@ struct WalkthroughTwo: View {
                         .font(.system(size: 30, weight: .bold))
                         .padding(.top, 150)
                         .padding(.bottom, 2)
-                    Text("Activate Zo's keyboard so you can access the Shortcuts you created right from your keyboard.")
+                    Text("Activate ZoZo's keyboard in your settings to access the Shortcuts you create inside ZoZo.")
                         .multilineTextAlignment(.center)
                         .padding(.horizontal, 30)
                 }

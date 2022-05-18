@@ -16,6 +16,8 @@ struct CreatePhotoSnip: View {
     
     @State var data = Data()
     @State var showImagePicker: Bool = false
+    
+    //@State var showHomeView = false
  
     @EnvironmentObject var dataController: DataController
     @FetchRequest(sortDescriptors: []) var snips: FetchedResults<Snip>
@@ -58,6 +60,8 @@ struct CreatePhotoSnip: View {
                     updateDefaults()
                     
                     mode.wrappedValue.dismiss()
+                    
+                    //showHomeView = true
                 } label: {
                     CustomCreateButton(text: "CREATE SHORTCUT", borderColor: scheme == .dark ? Color("CustomDarkGrey") : .black , contentColor: scheme == .dark ?  Color("CustomDarkGrey") : .white)
                 }.padding(.bottom, 50)
@@ -89,6 +93,8 @@ struct CreatePhotoSnip: View {
         ).navigationBarHidden(true)
         .navigationBarBackButtonHidden(true)
         .ignoresSafeArea()
+        
+        //.fullScreenCover(isPresented: $showHomeView, content: {HomeView()})
     }
     func updateDefaults() {
         let snip = Sniptest(name: text, content: "", color: "ImageSnipColor", image: "photo", pickedimage: data)

@@ -14,6 +14,8 @@ struct CreateURLSnip: View {
     
     @State var text = ""
     @State var url = ""
+    
+    //@State var showHomeView = false
 
     @EnvironmentObject var dataController: DataController
     @FetchRequest(sortDescriptors: []) var snips: FetchedResults<Snip>
@@ -68,6 +70,9 @@ struct CreateURLSnip: View {
                     updateDefaults()
                     
                     mode.wrappedValue.dismiss()
+                    
+                    //showHomeView = true
+                    
                 } label: {
                     CustomCreateButton(text: "CREATE SHORTCUT", borderColor: scheme == .dark ? Color("CustomDarkGrey") : .black , contentColor: scheme == .dark ?  Color("CustomDarkGrey") : .white)
                 }.padding(.bottom, 50)
@@ -93,6 +98,8 @@ struct CreateURLSnip: View {
         ).navigationBarHidden(true)
         .navigationBarBackButtonHidden(true)
         .ignoresSafeArea()
+        
+        //.fullScreenCover(isPresented: $showHomeView, content: {HomeView()})
     }
     func updateDefaults() {
         let snip = Sniptest(name: text, content: url, color: "URLSnipColor", image: "paperclip", pickedimage: Data())
